@@ -51,3 +51,10 @@ bird.count <- read.delim(bird.files$data$files$url[intersect(
       grep("basic", bird.files$data$files$name))], sep = ",") # want to get both BASIC and COUNT (only one file)
 
 head(bird.count)
+
+# taxon endpoint-------------------
+loon.req <- GET("http://data.neonscience.org/api/v0/taxonomy/?family=Gaviidae") #query to search
+loon.req
+loon.list <- fromJSON(content(loon.req, as = "text"))
+loon.list
+
