@@ -110,7 +110,7 @@ Note: data QF legacy data are old observational data from paper datasheets
 
 # Getting locational data
 Mapping and tagging data has plots but no actual locational data. `calc.geo` function calculates precise loations for specific observations.
-```{r, message = FALSE, warning = FALSE}
+```{r, message = FALSE, warning = FALSE, results = "hide"}
 vegmap <- geoNEON::def.calc.geo.os(vegmap, 
                                    "vst_mappingandtagging") # tell it what data it is
 ```
