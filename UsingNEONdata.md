@@ -135,15 +135,7 @@ Working with vegetation structure data
 
 This is observational data giving vegetative structure. Validation file gets at how the data were QCd
 
-``` r
-vegmap <- read.delim("filesToStack10098/stackedFiles/vst_mappingandtagging.csv", sep = ",")
-```
-
 Next read in a file gives the ID and location of individual trees
-
-``` r
-vegind <- read.delim("filesToStack10098/stackedFiles/vst_apparentindividual.csv", sep = ",")
-```
 
 Note: data QF legacy data are old observational data from paper datasheets
 
@@ -162,22 +154,10 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |                                                                 |   0%
       |                                                                       
       |                                                                 |   1%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_089.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |=                                                                |   2%
       |                                                                       
       |==                                                               |   3%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_082.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |==                                                               |   4%
       |                                                                       
@@ -190,22 +170,10 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |=====                                                            |   8%
       |                                                                       
       |======                                                           |   9%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_083.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |======                                                           |  10%
       |                                                                       
       |=======                                                          |  11%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_077.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |========                                                         |  12%
       |                                                                       
@@ -232,22 +200,10 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |=============                                                    |  21%
       |                                                                       
       |==============                                                   |  21%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_086.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |==============                                                   |  22%
       |                                                                       
       |===============                                                  |  23%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_081.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |===============                                                  |  24%
       |                                                                       
@@ -258,12 +214,6 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |=================                                                |  26%
       |                                                                       
       |=================                                                |  27%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_070.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |==================                                               |  27%
       |                                                                       
@@ -274,24 +224,12 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |===================                                              |  30%
       |                                                                       
       |====================                                             |  31%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_076.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |=====================                                            |  32%
       |                                                                       
       |=====================                                            |  33%
       |                                                                       
       |======================                                           |  34%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_078.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |=======================                                          |  35%
       |                                                                       
@@ -310,24 +248,12 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |===========================                                      |  42%
       |                                                                       
       |============================                                     |  43%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_072.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |============================                                     |  44%
       |                                                                       
       |=============================                                    |  44%
       |                                                                       
       |=============================                                    |  45%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_074.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |==============================                                   |  46%
       |                                                                       
@@ -342,12 +268,6 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |================================                                 |  50%
       |                                                                       
       |=================================                                |  50%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_080.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |=================================                                |  51%
       |                                                                       
@@ -368,24 +288,12 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |=====================================                            |  57%
       |                                                                       
       |======================================                           |  58%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_073.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |======================================                           |  59%
       |                                                                       
       |=======================================                          |  60%
       |                                                                       
       |========================================                         |  61%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_079.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |========================================                         |  62%
       |                                                                       
@@ -408,12 +316,6 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |==============================================                   |  71%
       |                                                                       
       |===============================================                  |  72%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_085.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |===============================================                  |  73%
       |                                                                       
@@ -424,12 +326,6 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |=================================================                |  75%
       |                                                                       
       |=================================================                |  76%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_084.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |==================================================               |  76%
       |                                                                       
@@ -444,20 +340,8 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |====================================================             |  80%
       |                                                                       
       |=====================================================            |  81%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_087.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |=====================================================            |  82%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_088.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |======================================================           |  82%
       |                                                                       
@@ -476,12 +360,6 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |=========================================================        |  88%
       |                                                                       
       |==========================================================       |  89%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_071.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |===========================================================      |  90%
       |                                                                       
@@ -494,12 +372,6 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |=============================================================    |  94%
       |                                                                       
       |==============================================================   |  95%
-
-    ## Warning in geoNEON::def.extr.geo.os(data, locCol = locCol,
-    ## locOnly = F): WARNING: the following namedLocation was not found:
-    ## WREF_075.basePlot.vst.NA
-
-    ## 
       |                                                                       
       |===============================================================  |  96%
       |                                                                       
@@ -510,9 +382,6 @@ vegmap <- geoNEON::def.calc.geo.os(vegmap,
       |=================================================================|  99%
       |                                                                       
       |=================================================================| 100%
-
-    ## Warning in def.calc.latlong(point.loc): one or more rows had missing inputs
-    ## for easting, northing, or UTM zone and were not converted
 
 Data product user guides will help you figure out what data source to use. This function looks up the plot and the point within the plot and looks for the location. Takes NAmed Location + Point ID, and looks up that value. Then it gets a location for point id, then takes the stemlocation relative to point ID (because we have stem length and angle)
 

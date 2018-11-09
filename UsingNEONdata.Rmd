@@ -97,21 +97,20 @@ plot(PARMean~startDateTime,
 
 # Working with vegetation structure data
 This is observational data giving vegetative structure. Validation file gets at how the data were QCd
-```{r}
+```{r, echo = FALSE}
 vegmap <- read.delim("filesToStack10098/stackedFiles/vst_mappingandtagging.csv", sep = ",")
 ```
 
 Next read in a file gives the ID and location of individual trees
-```{r}
+```{r, echo = FALSE}
 vegind <- read.delim("filesToStack10098/stackedFiles/vst_apparentindividual.csv", sep = ",")
-
 ```
 
 Note: data QF legacy data are old observational data from paper datasheets
 
 # Getting locational data
 Mapping and tagging data has plots but no actual locational data. `calc.geo` function calculates precise loations for specific observations.
-```{r}
+```{r, message = FALSE, warning = FALSE}
 vegmap <- geoNEON::def.calc.geo.os(vegmap, 
                                    "vst_mappingandtagging") # tell it what data it is
 ```
